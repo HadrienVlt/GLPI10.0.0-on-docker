@@ -1,0 +1,57 @@
+version: "3.9"
+
+services:
+
+  mariadb:
+    image: mariadb:latest
+    hostname: mariadb-database
+    restart: always
+    environment:
+       MARIADB_ROOT_PASSWORD: root
+       MARIADB_DATABASE: glpi
+       MARIADB_USER: glpi_user
+       MARIADB_USER_PASSWORD: glpi_user
+    networks:
+         glpi_network:
+             ipv4_address: 172.28.0.5
+
+  redis:
+    image: redis
+    hostname: redis-1
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+    networks:
+         glpi_network:
+             ipv4_address: 172.28.0.4
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - "9090:80"
+    environment:
+      - PMA_ARBITRARY=1
+    networks:
+         glpi_network:
+             ipv4_address: 172.28.0.3
+    links:
+      - mariadb
+      - redis
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    links:
+      - mariadb
+      - redis
+    networks:
+         glpi_network:
+             ipv4_address: 172.28.0.2
+
+networks:
+     glpi_network:
+        ipam:
+            config:
+                - subnet: 172.28.0.0/16
