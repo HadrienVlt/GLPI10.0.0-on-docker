@@ -6,7 +6,7 @@ Tout d’abord, il faut télécharger le référentiel.
 
 Deuxièmement, il faut lancer la commande "docker-compose up" depuis powershell dans le dossier du dépôt téléchargé de votre ordinateur.
 
-Troisièmement, lorsque le cluster est lancé, il faut aller à l’adresse suivante : http://localhost:8080/glpi/install/install.php et suivre l'installation.
+Troisièmement, lorsque le cluster de conteneur est lancé, il faut aller à l’adresse suivante : http://localhost:8080/glpi/install/install.php et suivre l'installation.
 
 Default login Maria DB database :
        MARIADB_ROOT_PASSWORD: root
@@ -21,71 +21,71 @@ password : root
 
 ###########################################################################################################
 
-GLPI10.0.0-on-docker
+# GLPI10.0.0-on-docker
 
 Installation of GLPI on docker:
 
-Firstly, you have to download the repository.
+First, you need to download the repository.
 
-Secondly, you have to run the command "docker-compose up" from powershell in the folder of the downloaded repository of your computer.
+Second, run the "docker-compose up" command from powershell in the folder of the downloaded repository of your computer.
 
-Thirdly, when the cluster is launched you have to go at the next url : https://172.28.0.2/glpi and enjoy the installation.
+Third, when the container cluster is launched, go to the following address: http://localhost:8080/glpi/install/install.php and follow the installation.
 
-Default login Maria DB database :
+Default login Maria DB database:
        MARIADB_ROOT_PASSWORD: root
        MARIADB_DATABASE: glpi
        MARIADB_USER: glpi_user
        MARIADB_USER_PASSWORD: glpi_user
        
-Default login GLPI :
+Default login GLPI:
   
-login : root
-password : root
+login: root
+password: root
 
 
 ###########################################################################################################
 
-GLPI10.0.0-on-docker
+# GLPI10.0.0-on-docker
 
-Para usar GLPI en docker :
+Instalación de GLPI en el muelle:
 
-En primer lugar, debe descargar el depósito.
+En primer lugar, hay que descargar el repositorio.
 
 En segundo lugar, debe ejecutar el comando "docker-compose up" desde Powershell en la carpeta del repositorio descargado de su computadora.
 
-En tercer lugar, cuando se inicia el clúster, debe ir a https://172.28. 0.2/glpi y disfrutar de la instalación.
+En tercer lugar, cuando se inicia el clúster de contenedores, debe ir a la siguiente dirección: http://localhost:8080/glpi/install/install.php y seguir la instalación.
 
-Conexión predeterminada a la base de datos Maria DB:
+Default login Maria DB database:
        MARIADB_ROOT_PASSWORD: root
        MARIADB_DATABASE: glpi
        MARIADB_USER: glpi_user
        MARIADB_USER_PASSWORD: glpi_user
        
-Login GLPI por defecto:
+Default login GLPI:
   
 login: root
-contraseña: root
+password: root
 
 ###########################################################################################################
 
 
-GLPI10.0.0-on-docker
+# GLPI10.0.0-on-docker
 
 Установка GLPI на докер:
 
-Сначала вам нужно загрузить хранилище.
+Сначала нужно загрузить хранилище.
 
-Во-вторых, вы должны запустить команду "docker-compose up" из powershell в папке хранилища, загруженной с вашего компьютера.
+Во-вторых, запустите команду "docker-compose up" из powershell в папке загруженного хранилища вашего компьютера.
 
-В-третьих, когда кластер запущен, вы должны перейти на следующий адрес: https://172.28. 0.2/glpi и наслаждаться установкой.
+В-третьих, при запуске контейнерного кластера перейдите по следующему адресу: http:/localhost:8080/glpi/install/install.php и следуйте установке.
 
-Подключение по умолчанию к базе данных Maria DB:
+База данных Maria DB по умолчанию:
        MARIADB_ROOT_PASSWORD: root
-       База данныхMARIADB_: glpi
-       MARIADB_USER : glpi_user
-       MARIADB_USER_PASSWORD : glpi_user
+       MARIADB_DATABASE: glpi
+       MARIADB_USER: glpi_user
+       MARIADB_USER_PASSWORD: glpi_user
        
-Логин GLPI по умолчанию:
+По умолчанию логин GLPI:
   
-вход: корень
+вход: root
 пароль: root
