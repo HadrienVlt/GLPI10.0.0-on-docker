@@ -19,6 +19,8 @@ Default login GLPI :
 login : root
 password : root
 
+# Licence
+Ce projet est sous licence [CC BY-NC 4.0]. Vous pouvez l'utiliser, le distribuer et le modifier, mais vous ne pouvez pas l'utiliser à des fins commerciales. Voir le fichier licence pour plus de détails.
 ###########################################################################################################
 
 
@@ -62,6 +64,8 @@ Default login GLPI:
 login: root
 password: root
 
+# Licencia
+Este proyecto está bajo la licencia [CC BY-NC 4.0]. Puedes usarlo, distribuirlo y modificarlo, pero no puedes usarlo con fines comerciales. Consulta el archivo de licencia para más detalles.
 ###########################################################################################################
 
 
@@ -83,3 +87,6 @@ password: root
   
 вход: root
 пароль: root
+
+# Лицензия
+Данный проект распространяется под лицензией [CC BY-NC 4.0]. Вы можете использовать, распространять и изменять его, но не можете использовать в коммерческих целях. Более подробную информацию см. в файле лицензии.
