@@ -2,7 +2,9 @@
 
 Installation de GLPI sur docker :
 
-Tout d’abord, il faut télécharger le référentiel.
+Tout d’abord, il faut télécharger le référentiel : 
+
+git clone https://github.com/HadrienVlt/GLPI10.0.0-on-docker.git
 
 Deuxièmement, il faut lancer la commande "docker-compose up" depuis powershell dans le dossier du dépôt téléchargé de votre ordinateur.
 
@@ -26,7 +28,9 @@ Ce projet est sous licence [CC BY-NC 4.0]. Vous pouvez l'utiliser, le distribuer
 
 Installation of GLPI on docker:
 
-First, you need to download the repository.
+First, you need to download the repository :
+
+git clone https://github.com/HadrienVlt/GLPI10.0.0-on-docker.git
 
 Second, run the "docker-compose up" command from powershell in the folder of the downloaded repository of your computer.
 
@@ -47,7 +51,9 @@ password: root
 
 Instalación de GLPI en el muelle:
 
-En primer lugar, hay que descargar el repositorio.
+En primer lugar, hay que descargar el repositorio :
+
+git clone https://github.com/HadrienVlt/GLPI10.0.0-on-docker.git
 
 En segundo lugar, debe ejecutar el comando "docker-compose up" desde Powershell en la carpeta del repositorio descargado de su computadora.
 
